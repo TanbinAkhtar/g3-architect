@@ -76,7 +76,7 @@ ul li a {
     width: 100%;
 }
 
-/* -------Responsive media quary----------- */
+
 
 
 
@@ -122,8 +122,54 @@ main {
     font-weight: 700;
 }
 
+/* -----------------features ------------------- */
+.features {
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
 
-/* facts */
+.features-contant .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.features-img img {
+    height: 90%;
+    margin-left: 90px;
+}
+
+.ten-years-badage {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+
+}
+
+.ten-years-badage p {
+    font-size: 1.5rem;
+}
+
+.ten-years-badage h3 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.features-contant .card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ----------------facts ------------------*/
 
 .facts-card-container {
     display: flex;
@@ -136,6 +182,15 @@ main {
     text-align: center;
     padding: 30px;
 
+
+}
+
+.facts {
+    text-align: center;
+}
+
+.facts .section-title {
+    margin-bottom: 0px;
 }
 
 .facts-card-container .card-stats {
@@ -143,6 +198,7 @@ main {
     color: #424242;
     margin-top: 10px;
     margin-bottom: 10px;
+
 }
 
 .facts-card-container .card-title {
@@ -172,6 +228,10 @@ main {
     width: 165px;
 }
 
+
+/* -------Responsive media quary----------- */
+
+
 /* Mobile devices */
 @media screen and (max-width: 576px) {
     header {
@@ -184,8 +244,19 @@ main {
 
     .container,
     .facts-card-container,
-    .sponsors-img-container {
+    .sponsors-img-container,
+    .features {
         flex-direction: column;
+    }
+
+    .features-img img {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .ten-years-badage {
+        position: static;
+        max-width: 300px;
     }
 
     .facts-card-container {
@@ -209,7 +280,8 @@ main {
 
     nav,
     .container,
-    .sponsors-img-container {
+    .sponsors-img-container,
+    .features {
         flex-direction: column;
     }
 
